@@ -57,14 +57,46 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 1300px;
 
     margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-container img {
+    height: 150px;
+    width: 150px;
+
+    margin-top: 30px;
+ 
+    border: 5px solid black;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title-container p {
+    font-size: 1.8rem;
+    font-weight: bold;
+
+    margin-top: 30px;
 }
 
 .money-container {
     border: 2px solid black;
     height: 100px;
     width: 1300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     margin-top: 30px;
+}
+
+#money {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 3.5px;
 }
 
 .money-left-container {
@@ -72,7 +104,19 @@ p, h1, h2, h3, h4, h5, h6 {
     height: 100px;
     width: 1300px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     margin-top: 10px;
+}
+
+#money-left {
+    border: 2px solid green;
+
+    height: 60px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 
