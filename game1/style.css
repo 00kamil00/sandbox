@@ -213,6 +213,26 @@ p, h1, h2, h3, h4, h5, h6 {
     background-color: rgb(0, 93, 0);
 }
 
+.sell {
+    cursor: not-allowed;
+}
+
+.sell.can-sell {
+    background-color: rgb(151, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.sell.can-sell:hover {
+    background-color: rgb(225, 0, 0);
+    color: white;
+    transform: scale(0.9);
+}
+
+.sell.can-sell:active {
+    background-color: rgb(151, 0, 0);
+}
+
 .quantity {
     color: white;
 }
