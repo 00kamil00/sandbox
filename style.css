@@ -1,4 +1,4 @@
-/* ---------------- CSS reset ---------------- */
+/* ---------------- CSS reset & font stack ---------------- */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -10,6 +10,8 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.5;
 }
 
 img, picture, video, canvas, svg {
@@ -24,24 +26,15 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
-/* ---------------- CSS reset ---------------- */
-
-
-/* ---------------- system font stack ---------------- */
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-}
-/* ---------------- system font stack ---------------- */
+/* ---------------- CSS reset & font stack ---------------- */
 
 
 
-
+/* ---------------- header ---------------- */
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    margin: 10px;
 }
 
 .header h1 {
@@ -55,4 +48,46 @@ body {
     align-items: center;
     gap: 20px;
 }
+/* ---------------- header ---------------- */
 
+
+/* ---------------- body / main container ---------------- */
+.main-container {
+    border: 2px solid red;
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container {
+    border: 2px solid black;
+    height: 250px;
+    width: 1700px;
+
+    display: flex;
+    align-items: stretch;
+}
+
+.image {
+    border: 2px solid blue;
+    width: 50%;  
+}
+
+.content {
+    border: 2px solid violet;
+    width: 25%;
+}
+
+.btn {
+    border: 2px solid darkorange;
+    width: 25%; 
+}
+
+
+
+
+
+/* ---------------- body / main container ---------------- */
