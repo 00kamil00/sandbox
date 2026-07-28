@@ -12,6 +12,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.5;
+    background-color: #e0e1dd;
 }
 
 img, picture, video, canvas, svg {
@@ -28,14 +29,14 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 /* ---------------- CSS reset & font stack ---------------- */
 
-
-
 /* ---------------- header ---------------- */
 .header {
-    border: 2px solid black;
+    /* border: 2px solid black; */
 
     height: 100px;
     width: 100vw;
+
+    background-color: white;
 }
 /* ---------------- header ---------------- */
 
@@ -45,14 +46,14 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .container-1 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .title-container {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 300px;
     width: 1300px;
 
@@ -61,6 +62,8 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-color: white;
 }
 
 .title-container img {
@@ -82,7 +85,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .money-container {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 100px;
     width: 1300px;
 
@@ -91,16 +94,20 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: center;
     
     margin-top: 30px;
+
+    background-color: #1b263b;
 }
 
 #money {
     font-size: 2.5rem;
     font-weight: 800;
     letter-spacing: 3.5px;
+
+    color: #e0e1dd;
 }
 
 .money-left-container {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 100px;
     width: 1300px;
 
@@ -109,10 +116,13 @@ p, h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 
     margin-top: 10px;
+
+    background-color: #1b263b;
 }
 
 #money-left {
-    border: 2px solid green;
+    border: 5px solid green;
+    background-color: white;
 
     height: 60px;
     margin-right: 50px;
@@ -123,42 +133,89 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 .container-2 {
-    border: 2px solid red;
-    height: 500px;
+    /* border: 2px solid red; */
+    max-width: 1450px;
 
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
+
+    padding-top: 100px;
+    margin: 0 auto;
 }
 
 .item {
     border: 2px solid black;
+
     height: 300px;
     width: 300px;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+
+    background-color: white;
+}
+
+.item img {
+    height: 150px;
+    width: auto;
+}
+
+#price {
+    margin-bottom: 10px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(0, 93, 0);
 }
 
 .item-btns {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 60px;
     width: 100%;
 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-shrink: 0;
+
+    background-color: #1b263b;
 }
 
 .sell, .buy {
     height: 35px;
     width: 70px;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 3px;
 }
 
-.item img {
-    height: 200px;
-    width: auto;
+.buy {
+    background-color: rgb(0, 93, 0);
+    color: white;
 }
+
+.buy:hover {
+    background-color: rgb(1, 125, 1);
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.buy:active {
+    background-color: rgb(0, 93, 0);
+}
+
+.quantity {
+    color: white;
+}
+
+
 /* ---------------- body / main container ---------------- */
