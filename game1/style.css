@@ -127,6 +127,15 @@ p, h1, h2, h3, h4, h5, h6 {
     height: 60px;
     margin-right: 50px;
     margin-left: 50px;
+
+    overflow: hidden;
+}
+
+#money-bar {
+    background-color: green;
+    height: 100%;
+    width: 100%;
+    transition: width 0.3s ease;
 }
 
 

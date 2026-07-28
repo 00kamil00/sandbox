@@ -21,6 +21,8 @@ items.forEach((item) => {
 
             money -= itemPrice
             mn.textContent = '$' + money.toLocaleString('en-US')
+
+            updateMoneyBar()
         }
 
         if (itemQuantity > 0) {
@@ -38,6 +40,8 @@ items.forEach((item) => {
 
             money += itemPrice
             mn.textContent = '$' + money.toLocaleString('en-US')
+
+            updateMoneyBar()
         }
 
         if (itemQuantity > 0) {
@@ -47,3 +51,14 @@ items.forEach((item) => {
         }
     })
 })
+
+
+
+let start_money = 750000000000
+const moneyBar = document.querySelector('#money-bar')
+
+function updateMoneyBar() {
+    let left_money_percent = (money / start_money) * 100
+
+    moneyBar.style.width = left_money_percent + '%'
+}
