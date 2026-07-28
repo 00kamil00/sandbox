@@ -79,7 +79,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .image {
     width: 50%;
 
-    background-image: url('');
+    background-image: url('./images/image1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -99,17 +99,40 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
 
-    margin-right: 50px;
+    margin-right: 40px;
+}
+
+.details p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    line-height: 1.4;
 }
 
 button {
     height: 60px;
     width: 1000px;
 
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
+
+    background-color: #002F03;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
 }
 
+button:hover {
+    background-color: #004905;
+
+    transform: scale(0.97);
+}
+
+button:active {
+    background-color: #002F03;
+}
 
 
 
