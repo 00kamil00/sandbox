@@ -23,6 +23,7 @@ items.forEach((item) => {
             mn.textContent = '$' + money.toLocaleString('en-US')
 
             updateMoneyBar()
+            updateAllBuyButtons()
         }
 
         if (itemQuantity > 0) {
@@ -42,6 +43,7 @@ items.forEach((item) => {
             mn.textContent = '$' + money.toLocaleString('en-US')
 
             updateMoneyBar()
+            updateAllBuyButtons()
         }
 
         if (itemQuantity > 0) {
@@ -62,3 +64,23 @@ function updateMoneyBar() {
 
     moneyBar.style.width = left_money_percent + '%'
 }
+
+
+
+
+
+function updateAllBuyButtons() {
+    items.forEach((item) => {
+        let price = item.querySelector('.price')
+        let itemPrice = Number(price.textContent.replace(/[^0-9]/g, ''))
+        let buy = item.querySelector('.buy')
+
+        if (money < itemPrice) {
+            buy.classList.add('cant-buy')
+        } else {
+            buy.classList.remove('cant-buy')
+        }
+    })
+}
+
+updateAllBuyButtons()

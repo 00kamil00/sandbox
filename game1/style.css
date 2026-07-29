@@ -222,6 +222,16 @@ p, h1, h2, h3, h4, h5, h6 {
     background-color: rgb(0, 93, 0);
 }
 
+.buy.cant-buy {
+    background-color: grey;
+    color: black;
+    cursor: not-allowed;
+}
+
+.buy.cant-buy:hover {
+    transform: none;
+}
+
 .sell {
     cursor: not-allowed;
 }
