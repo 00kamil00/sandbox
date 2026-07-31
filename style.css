@@ -139,12 +139,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .content a:hover {
     background-color: #004905;
-
-    transform: scale(0.97);
+    transform: scale(1.02);
 }
 
 .content a:active {
     background-color: #002F03;
+    transform: scale(0.95);
 }
 
 
